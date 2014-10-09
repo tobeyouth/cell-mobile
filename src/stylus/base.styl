@@ -1,0 +1,23 @@
+@import "var.styl"
+// mixins
+reset()
+    margin:0px
+    padding:0px
+
+vender(props,args)
+    -webkit-{props} args
+       -moz-{props} args
+            {props} args
+
+// reset
+html,body,div,p,section,article,header,footer,table,form,ul,ol,li,span,em,i,h1,h2,h3,h4,h5,h6
+    reset()
+
+html,body
+    font $body-font
+        
+
+a 
+    color:$link-color
+    text-decoration:none
+

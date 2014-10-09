@@ -1,0 +1,33 @@
+html,
+body,
+div,
+p,
+section,
+article,
+header,
+footer,
+table,
+form,
+ul,
+ol,
+li,
+span,
+em,
+i,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  font: 12px Arial, Helvetica, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}

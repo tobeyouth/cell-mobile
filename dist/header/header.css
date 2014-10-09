@@ -1,0 +1,27 @@
+.cell-header {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-color: #666;
+}
+.cell-header .title {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+}
+.cell-header .header-btn {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+}
+.cell-header .navbutton,
+.cell-header .backbutton {
+  left: 0;
+}
+.cell-header .right-btn {
+  right: 0;
+}

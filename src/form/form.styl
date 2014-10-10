@@ -1,0 +1,82 @@
+/** form stylye **/
+
+/** vars **/
+$input-border = #999
+$focus-border = #333
+$border-success = #999
+$border-error = #f00
+$border-warning = #f50
+$add-color = #999
+$default-color = #333
+$error-color = #f00
+
+/** main **/
+.form-group
+    display relative
+    z-index 1
+    border-bottom 1px solid $input-border
+
+    &:focus
+        border-bottom $focus-border
+
+    .control-label
+        display inline-block
+    
+    .input-group
+        position relative
+        z-index 1
+        display table
+        border-collapse separate
+        box-sizing border-box
+        width 100%
+
+    .input-group-addon,.input-group-btn,.form-control
+        display table-cell
+
+    .input-group-addon
+        color $add-color
+        width 1%
+        height 100%
+        line-height 1
+        white-space nowrap
+        vertical-align middle
+        text-align center
+        font-size 14px
+
+    .form-control-feedback
+        display none
+        
+    input.form-control
+        border none
+        font-size 14px
+        line-height 1.2em
+        color $default-color
+        float left
+        width 100%
+        padding 5px 10px
+        box-sizing border-box
+        
+        &:focus
+            outline none
+
+        
+/** action **/
+.form-group[data-state="succes"]
+    border-bottom 1px solid $border-success
+    .form-control-feedback
+        display block
+
+.form-group[data-state="error"]
+    border-bottom 1px solid $border-error
+    .form-control-feedback
+        display block
+
+.form-group[data-state="warning"]
+    border-bottom 1px solid $border-warning
+    .form-control-feedback
+        display block
+
+
+
+
+

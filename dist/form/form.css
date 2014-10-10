@@ -1,0 +1,72 @@
+/** form stylye **/
+/** vars **/
+/** main **/
+.form-group {
+  display: relative;
+  z-index: 1;
+  border-bottom: 1px solid #999;
+}
+.form-group:focus {
+  border-bottom: #333;
+}
+.form-group .control-label {
+  display: inline-block;
+}
+.form-group .input-group {
+  position: relative;
+  z-index: 1;
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  width: 100%;
+}
+.form-group .input-group-addon,
+.form-group .input-group-btn,
+.form-group .form-control {
+  display: table-cell;
+}
+.form-group .input-group-addon {
+  color: #999;
+  width: 1%;
+  height: 100%;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+}
+.form-group .form-control-feedback {
+  display: none;
+}
+.form-group input.form-control {
+  border: none;
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #333;
+  float: left;
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.form-group input.form-control:focus {
+  outline: none;
+}
+/** action **/
+.form-group[data-state="succes"] {
+  border-bottom: 1px solid #999;
+}
+.form-group[data-state="succes"] .form-control-feedback {
+  display: block;
+}
+.form-group[data-state="error"] {
+  border-bottom: 1px solid #f00;
+}
+.form-group[data-state="error"] .form-control-feedback {
+  display: block;
+}
+.form-group[data-state="warning"] {
+  border-bottom: 1px solid #f50;
+}
+.form-group[data-state="warning"] .form-control-feedback {
+  display: block;
+}

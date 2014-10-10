@@ -74,11 +74,11 @@ a {
   z-index: 10;
 }
 .cell-card[data-active="false"][data-role="main"][data-curdect="navside"] {
-  -webkit-transform: translateX(280px);
-  -moz-transform: translateX(280px);
-  -ms-transform: translateX(280px);
-  -o-transform: translateX(280px);
-  transform: translateX(280px);
+  -webkit-transform: translateX(80%);
+  -moz-transform: translateX(80%);
+  -ms-transform: translateX(80%);
+  -o-transform: translateX(80%);
+  transform: translateX(80%);
 }
 .cell-card[data-active="false"][data-role="main"][data-curdect="navside"] .back-mask {
   display: block;
@@ -87,11 +87,11 @@ a {
   z-index: 10;
 }
 [data-active="false"][data-role="main"][data-curdect="setside"] {
-  -webkit-transform: translateX(-280px);
-  -moz-transform: translateX(-280px);
-  -ms-transform: translateX(-280px);
-  -o-transform: translateX(-280px);
-  transform: translateX(-280px);
+  -webkit-transform: translateX(-80%);
+  -moz-transform: translateX(-80%);
+  -ms-transform: translateX(-80%);
+  -o-transform: translateX(-80%);
+  transform: translateX(-80%);
 }
 .cell-header {
   height: 40px;
@@ -119,6 +119,18 @@ a {
 }
 .cell-header .right-btn {
   right: 0;
+}
+.cell-search {
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+}
+.cell-search:focus {
+  border: 1px solid #333;
+  outline: none;
+  text-align: left;
 }
 .cell-frame {
   width: 100%;

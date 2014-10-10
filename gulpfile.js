@@ -12,11 +12,15 @@ gulp.task('stylus',function () {
 });
 
 gulp.task('browserify',function () {
-    return gulp.src('.build/**/main.js').pipe(browserify()).pipe(gulp.dest('dist'));
+    return gulp.src('.build/form/**.js')
+    		.pipe(browserify({
+          		"debug": !gulp.env.production
+    		}))
+    		.pipe(gulp.dest('dist/form'));
 });
 
 
 // frame
-gulp.task('frame',['react','stylus'],function() {
-	return gulp.src('.build/**/main.js').pipe(browserify()).pipe(gulp.dest('dist'));
+gulp.task('default',['react','stylus'],function() {
+	return gulp.src('.build/frame/**.js').pipe(browserify()).pipe(gulp.dest('dist'));
 });
